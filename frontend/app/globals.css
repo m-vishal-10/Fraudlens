@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  @apply bg-canvas font-sans text-body text-ink antialiased;
+}
+
+::selection { background: rgba(62, 123, 224, 0.35); }
+
+@layer base {
+  :focus-visible { outline: 2px solid rgba(62, 123, 224, 0.7); outline-offset: 2px; }
+  h1, h2, h3 { text-wrap: balance; }
+}
+
+/* Slim, low-contrast scrollbars for the dense table and drawer */
+* { scrollbar-width: thin; scrollbar-color: #282C35 transparent; }

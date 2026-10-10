@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Asus/OneDrive/Desktop/FraudLens/mlruns/223191598280259646/6da9471f45b241beba0e19d827ec3d79/artifacts
+end_time: 1791616634167
+entry_point_name: ''
+experiment_id: '223191598280259646'
+lifecycle_stage: active
+run_id: 6da9471f45b241beba0e19d827ec3d79
+run_name: selected-xgboost
+run_uuid: 6da9471f45b241beba0e19d827ec3d79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616634090
+status: 3
+tags: []
+user_id: Vishal

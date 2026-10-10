@@ -1,0 +1,413 @@
+{
+  "rows": 284807,
+  "columns": 31,
+  "feature_columns": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "dtypes": {
+    "float64": 30,
+    "int64": 1
+  },
+  "fraud_count": 492,
+  "legitimate_count": 284315,
+  "fraud_prevalence": 0.001727485630620034,
+  "missing_values": 0,
+  "duplicate_rows": 1081,
+  "all_negative_accuracy": 0.9982725143693799,
+  "amount": {
+    "count": 284807.0,
+    "mean": 88.34961925093134,
+    "std": 250.12010924018855,
+    "min": 0.0,
+    "25%": 5.6,
+    "50%": 22.0,
+    "75%": 77.16499999999999,
+    "max": 25691.16
+  },
+  "time": {
+    "count": 284807.0,
+    "mean": 94813.85957508067,
+    "std": 47488.14595456617,
+    "min": 0.0,
+    "25%": 54201.5,
+    "50%": 84692.0,
+    "75%": 139320.5,
+    "max": 172792.0
+  },
+  "amount_by_class": {
+    "fraud": {
+      "count": 492,
+      "mean": 122.21132113821139,
+      "median": 9.25,
+      "std": 256.6832882977121,
+      "p95": 640.9049999999999,
+      "max": 2125.87
+    },
+    "legitimate": {
+      "count": 284315,
+      "mean": 88.29102242231328,
+      "median": 22.0,
+      "std": 250.10509222589243,
+      "p95": 364.40899999999965,
+      "max": 25691.16
+    }
+  },
+  "amount_hypothesis": {
+    "hypothesis": "Fraudulent transactions tend to have smaller amounts.",
+    "fraud_median_lower": true,
+    "fraud_mean_lower": false,
+    "mann_whitney_p_value": 8.57847231084022e-06,
+    "finding": "Median Amount: fraud 9.25 vs legitimate 22.00; mean Amount: fraud 122.21 vs legitimate 88.29. The typical (median) fraud amount is smaller, but the mean is larger because a few large fraud amounts pull it up."
+  },
+  "key_features": {
+    "V14": {
+      "fraud": {
+        "count": 492,
+        "mean": -6.971722894107602,
+        "median": -6.72971975555353,
+        "std": 4.278939887044232,
+        "p95": -0.07322205257205434,
+        "max": 3.44242199594215
+      },
+      "legitimate": {
+        "count": 284315,
+        "mean": 0.012064392184377496,
+        "median": 0.0519468577675631,
+        "std": 0.8970065241747024,
+        "p95": 1.3945238481032236,
+        "max": 10.5267660517847
+      },
+      "separation_rank_of_30": 1,
+      "single_feature_auc": 0.050840288075075325
+    },
+    "V17": {
+      "fraud": {
+        "count": 492,
+        "mean": -6.665836399449663,
+        "median": -5.302948526983645,
+        "std": 6.970617740259835,
+        "p95": 2.7165250118754085,
+        "max": 6.73938438478335
+      },
+      "legitimate": {
+        "count": 284315,
+        "mean": 0.011535063252129248,
+        "median": -0.0648331878217843,
+        "std": 0.749456648242162,
+        "p95": 1.2738319779080483,
+        "max": 9.25352625047285
+      },
+      "separation_rank_of_30": 11,
+      "single_feature_auc": 0.19180500015084034
+    },
+    "V12": {
+      "fraud": {
+        "count": 492,
+        "mean": -6.259393036190131,
+        "median": -5.50252955648739,
+        "std": 4.6544584929147765,
+        "p95": 0.007674150709813589,
+        "max": 1.37594135044076
+      },
+      "legitimate": {
+        "count": 284315,
+        "mean": 0.010831723172555738,
+        "median": 0.141678732465315,
+        "std": 0.945939025726211,
+        "p95": 1.243630051064863,
+        "max": 7.8483920756446
+      },
+      "separation_rank_of_30": 3,
+      "single_feature_auc": 0.06295963955014397
+    },
+    "V10": {
+      "fraud": {
+        "count": 492,
+        "mean": -5.676882870194368,
+        "median": -4.57882495071597,
+        "std": 4.897341006509331,
+        "p95": 0.3288711581828816,
+        "max": 4.03143505114991
+      },
+      "legitimate": {
+        "count": 284315,
+        "mean": 0.009823703892289417,
+        "median": -0.0918722688618301,
+        "std": 1.0442036815228026,
+        "p95": 1.548901695061837,
+        "max": 23.7451361206545
+      },
+      "separation_rank_of_30": 5,
+      "single_feature_auc": 0.08594265006364604
+    }
+  },
+  "feature_separation_top10": [
+    {
+      "feature": "V14",
+      "single_feature_auc": 0.050840288075075325,
+      "separation": 0.9491597119249247,
+      "fraud_median": -6.72971975555353,
+      "legitimate_median": 0.0519468577675631
+    },
+    {
+      "feature": "V4",
+      "single_feature_auc": 0.9382584071343062,
+      "separation": 0.9382584071343062,
+      "fraud_median": 4.177147461325955,
+      "legitimate_median": -0.0224047809393354
+    },
+    {
+      "feature": "V12",
+      "single_feature_auc": 0.06295963955014397,
+      "separation": 0.9370403604498561,
+      "fraud_median": -5.50252955648739,
+      "legitimate_median": 0.141678732465315
+    },
+    {
+      "feature": "V11",
+      "single_feature_auc": 0.9180831649425827,
+      "separation": 0.9180831649425827,
+      "fraud_median": 3.5862184664682397,
+      "legitimate_median": -0.0349232138488162
+    },
+    {
+      "feature": "V10",
+      "single_feature_auc": 0.08594265006364604,
+      "separation": 0.914057349936354,
+      "fraud_median": -4.57882495071597,
+      "legitimate_median": -0.0918722688618301
+    },
+    {
+      "feature": "V3",
+      "single_feature_auc": 0.08792724461546358,
+      "separation": 0.9120727553845365,
+      "fraud_median": -5.075257365637334,
+      "legitimate_median": 0.182157704890967
+    },
+    {
+      "feature": "V2",
+      "single_feature_auc": 0.8549552204278176,
+      "separation": 0.8549552204278176,
+      "fraud_median": 2.717868597753185,
+      "legitimate_median": 0.0640697590470338
+    },
+    {
+      "feature": "V16",
+      "single_feature_auc": 0.15286854054724883,
+      "separation": 0.8471314594527511,
+      "fraud_median": -3.5497949007715,
+      "legitimate_median": 0.067376856395775
+    },
+    {
+      "feature": "V9",
+      "single_feature_auc": 0.1559098612282924,
+      "separation": 0.8440901387717076,
+      "fraud_median": -2.20876787152535,
+      "legitimate_median": -0.0499635494088805
+    },
+    {
+      "feature": "V7",
+      "single_feature_auc": 0.16418836659041722,
+      "separation": 0.8358116334095828,
+      "fraud_median": -3.0344016157732954,
+      "legitimate_median": 0.0411383091260399
+    }
+  ],
+  "top_correlations_with_class": {
+    "V17": -0.32648106724371595,
+    "V14": -0.3025436958044028,
+    "V12": -0.26059292487722485,
+    "V10": -0.21688294364103206,
+    "V16": -0.19653894030401736,
+    "V3": -0.19296082706741602,
+    "V7": -0.18725659151430013,
+    "V11": 0.15487564474394433,
+    "V4": 0.13344748623900718,
+    "V18": -0.11148525388904133
+  },
+  "time_bins_2h_elapsed": [
+    {
+      "bin_start_seconds": 0,
+      "transactions": 6180,
+      "frauds": 4,
+      "fraud_rate": 0.0006472491909385113
+    },
+    {
+      "bin_start_seconds": 7200,
+      "transactions": 3397,
+      "frauds": 34,
+      "fraud_rate": 0.010008831321754489
+    },
+    {
+      "bin_start_seconds": 14400,
+      "transactions": 2763,
+      "frauds": 17,
+      "fraud_rate": 0.006152732537097358
+    },
+    {
+      "bin_start_seconds": 21600,
+      "transactions": 5199,
+      "frauds": 26,
+      "fraud_rate": 0.005000961723408348
+    },
+    {
+      "bin_start_seconds": 28800,
+      "transactions": 13057,
+      "frauds": 20,
+      "fraud_rate": 0.0015317454239105461
+    },
+    {
+      "bin_start_seconds": 36000,
+      "transactions": 16805,
+      "frauds": 45,
+      "fraud_rate": 0.002677774471883368
+    },
+    {
+      "bin_start_seconds": 43200,
+      "transactions": 15317,
+      "frauds": 18,
+      "fraud_rate": 0.0011751648495136123
+    },
+    {
+      "bin_start_seconds": 50400,
+      "transactions": 15865,
+      "frauds": 27,
+      "fraud_rate": 0.0017018594390167034
+    },
+    {
+      "bin_start_seconds": 57600,
+      "transactions": 15668,
+      "frauds": 26,
+      "fraud_rate": 0.0016594332397242787
+    },
+    {
+      "bin_start_seconds": 64800,
+      "transactions": 16601,
+      "frauds": 22,
+      "fraud_rate": 0.0013252213722064936
+    },
+    {
+      "bin_start_seconds": 72000,
+      "transactions": 18875,
+      "frauds": 22,
+      "fraud_rate": 0.0011655629139072847
+    },
+    {
+      "bin_start_seconds": 79200,
+      "transactions": 15059,
+      "frauds": 20,
+      "fraud_rate": 0.0013281094362175444
+    },
+    {
+      "bin_start_seconds": 86400,
+      "transactions": 5735,
+      "frauds": 12,
+      "fraud_rate": 0.002092414995640802
+    },
+    {
+      "bin_start_seconds": 93600,
+      "transactions": 3423,
+      "frauds": 40,
+      "fraud_rate": 0.011685655857435
+    },
+    {
+      "bin_start_seconds": 100800,
+      "transactions": 2436,
+      "frauds": 17,
+      "fraud_rate": 0.0069786535303776685
+    },
+    {
+      "bin_start_seconds": 108000,
+      "transactions": 6145,
+      "frauds": 6,
+      "fraud_rate": 0.0009764035801464605
+    },
+    {
+      "bin_start_seconds": 115200,
+      "transactions": 13057,
+      "frauds": 5,
+      "fraud_rate": 0.00038293635597763654
+    },
+    {
+      "bin_start_seconds": 122400,
+      "transactions": 16649,
+      "frauds": 16,
+      "fraud_rate": 0.0009610186798005887
+    },
+    {
+      "bin_start_seconds": 129600,
+      "transactions": 15468,
+      "frauds": 16,
+      "fraud_rate": 0.001034393586759762
+    },
+    {
+      "bin_start_seconds": 136800,
+      "transactions": 17166,
+      "frauds": 22,
+      "fraud_rate": 0.001281603169055109
+    },
+    {
+      "bin_start_seconds": 144000,
+      "transactions": 16951,
+      "frauds": 25,
+      "fraud_rate": 0.001474839242522565
+    },
+    {
+      "bin_start_seconds": 151200,
+      "transactions": 16087,
+      "frauds": 30,
+      "fraud_rate": 0.0018648598247031764
+    },
+    {
+      "bin_start_seconds": 158400,
+      "transactions": 15584,
+      "frauds": 12,
+      "fraud_rate": 0.0007700205338809035
+    },
+    {
+      "bin_start_seconds": 165600,
+      "transactions": 11320,
+      "frauds": 10,
+      "fraud_rate": 0.0008833922261484099
+    }
+  ],
+  "time_note": "Time is elapsed seconds from the first transaction, not a clock time or calendar date. The dataset spans about two elapsed days.",
+  "time_first_vs_second_24h_count_correlation": 0.9609037190051503,
+  "plots": [
+    "eda_class_balance.png",
+    "eda_amount_by_class.png",
+    "eda_time_by_class.png",
+    "eda_key_features.png",
+    "eda_class_correlations.png",
+    "eda_feature_correlation.png"
+  ]
+}

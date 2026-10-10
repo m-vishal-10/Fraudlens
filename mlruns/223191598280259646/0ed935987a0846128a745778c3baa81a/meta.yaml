@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Asus/OneDrive/Desktop/FraudLens/mlruns/223191598280259646/0ed935987a0846128a745778c3baa81a/artifacts
+end_time: 1791616634032
+entry_point_name: ''
+experiment_id: '223191598280259646'
+lifecycle_stage: active
+run_id: 0ed935987a0846128a745778c3baa81a
+run_name: candidate-logistic_regression
+run_uuid: 0ed935987a0846128a745778c3baa81a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616633984
+status: 3
+tags: []
+user_id: Vishal

@@ -1,0 +1,126 @@
+{
+  "selected_model": "xgboost",
+  "feature_columns": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "target_column": "Class",
+  "random_state": 42,
+  "split": {
+    "train_fraction": 0.75,
+    "test_fraction": 0.25,
+    "validation_from_train": 0.2
+  },
+  "train_rows": 170884,
+  "validation_rows": 42721,
+  "test_rows": 71202,
+  "class_counts": {
+    "train": {
+      "legitimate": 170589,
+      "fraud": 295
+    },
+    "validation": {
+      "legitimate": 42647,
+      "fraud": 74
+    },
+    "test": {
+      "legitimate": 71079,
+      "fraud": 123
+    }
+  },
+  "validation_metrics": {
+    "logistic_regression": {
+      "average_precision": 0.7032060920889901,
+      "roc_auc": 0.9799623115975966,
+      "precision": 0.064453125,
+      "recall": 0.8918918918918919,
+      "f1": 0.12021857923497267,
+      "confusion_matrix": [
+        [
+          41689,
+          958
+        ],
+        [
+          8,
+          66
+        ]
+      ],
+      "k": 200,
+      "true_positives": 63,
+      "precision_at_k": 0.315,
+      "recall_at_k": 0.8513513513513513
+    },
+    "xgboost": {
+      "average_precision": 0.8256003261393483,
+      "roc_auc": 0.9772694001479144,
+      "precision": 0.8333333333333334,
+      "recall": 0.8108108108108109,
+      "f1": 0.821917808219178,
+      "confusion_matrix": [
+        [
+          42635,
+          12
+        ],
+        [
+          14,
+          60
+        ]
+      ],
+      "k": 200,
+      "true_positives": 62,
+      "precision_at_k": 0.31,
+      "recall_at_k": 0.8378378378378378
+    }
+  },
+  "test_metrics": {
+    "average_precision": 0.8417974220798221,
+    "roc_auc": 0.980283932329046,
+    "precision": 0.7952755905511811,
+    "recall": 0.8211382113821138,
+    "f1": 0.808,
+    "confusion_matrix": [
+      [
+        71053,
+        26
+      ],
+      [
+        22,
+        101
+      ]
+    ],
+    "k": 200,
+    "true_positives": 106,
+    "precision_at_k": 0.53,
+    "recall_at_k": 0.8617886178861789
+  },
+  "dataset_fingerprint": "76274b691b16a6c49d3f159c883398e03ccd6d1ee12d9d8ee38f4b4b98551a89",
+  "dataset_path": "C:\\Users\\Asus\\OneDrive\\Desktop\\FraudLens\\data\\raw\\creditcard.csv"
+}
